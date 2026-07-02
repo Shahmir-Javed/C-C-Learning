@@ -1,0 +1,2 @@
+Hello, File Handling in C++!
+Streams make this very intuitive.

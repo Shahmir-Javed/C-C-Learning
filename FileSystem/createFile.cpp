@@ -32,8 +32,6 @@ int main() {
             cout << line << endl;
         }
         inFile.close();
-    } else {
-        cerr << "Error opening file for reading!" << endl;
     }
 
     return 0;
