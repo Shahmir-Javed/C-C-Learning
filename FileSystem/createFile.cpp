@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     // 1. Create an ofstream object and open the file
-    ofstream outFile("data_cpp.txt");
+    ofstream outFile("Mydata_cpp.txt");
 
     // Check if the file opened successfully
     if (!outFile.is_open()) {
@@ -17,6 +17,8 @@ int main() {
     // 2. Write to the file using the insertion operator (<<)
     outFile << "Hello, File Handling in C++!" << endl;
     outFile << "Streams make this very intuitive." << endl;
+    outFile << "Hi! My name is Shahmir." << endl;
+    outFile << "Hi! My name is Shahmir." << endl;
 
     // 3. Close the file
     outFile.close();

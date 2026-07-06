@@ -1,0 +1,4 @@
+Hello, File Handling in C++!
+Streams make this very intuitive.
+Hi! My name is Shahmir.
+Hi! My name is Shahmir.
