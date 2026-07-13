@@ -1,18 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
+    // int n;
+    // cout << "Enter the number of rows: ";
+    // cin >> n;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     char ch = 'A';
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         cout << ch << " ";
+    //         ch++;
+    //     }
+    //     cout << endl;
+    // }
+
     int n;
-    cout<<"Enter the number of rows: ";
-    cin>>n;
-    for(int i=1;i<=n;i++)
+    int num1 = 0;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        for(int j=1;j<=n;j++)
+        for (int j = 0 ; j < n; j++)
         {
-            cout<<j<<" ";
+            cout << (num1 + 1) << " ";
+            num1++;
         }
-        cout<<endl;
+        cout << endl;
     }
     return 0;
 }
