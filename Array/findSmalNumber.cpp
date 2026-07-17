@@ -2,6 +2,8 @@
 #include <climits>
 using namespace std;
 
+
+
 int main()
 {
     int arr[5] = {12, 20, 5, 40, -30};
@@ -15,3 +17,4 @@ int main()
     cout << "The smallest number in the array is: " << smallest << endl;
     return 0;
 }
+
