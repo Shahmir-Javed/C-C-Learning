@@ -14,12 +14,12 @@ public:
     }
     void getData(void)
     {
-        cout << "The id of this employee is " << id << endl;
+        cout << "The id of this employee is " << id << " and this is employee number " << count << endl;
     }
 };
 
-int
-main()
+int Employee :: count;
+int main()
 {
     Employee harry, rohan, lovish;
     harry.setData();
