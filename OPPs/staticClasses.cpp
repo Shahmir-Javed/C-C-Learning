@@ -18,7 +18,7 @@ public:
     }
 };
 
-int Employee :: count;
+int Employee :: count = 0;
 int main()
 {
     Employee harry, rohan, lovish;
