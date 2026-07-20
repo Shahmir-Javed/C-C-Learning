@@ -21,6 +21,8 @@ int main()
     //     cout << endl;
     // }
 
+    // -------------------------------------------------------------------------------------------------------------------------------
+
     // Brute Force Approach to find the maximum contiguous sum in an array
     // int n = 5;
     // int arr[5] = {1, 2, 3, 4, 5};
@@ -39,6 +41,8 @@ int main()
 
     // cout << "Maximum contiguous sum: " << maxSum << endl;
 
+    // --------------------------------------------------------------------------------------------------------------------
+
     // Kadane's Algorithm to find the maximum contiguous sum in an array
     // int n = 5;
     // int arr[5] = {1, 2, 3, 4, 5};
@@ -53,25 +57,56 @@ int main()
 
     // cout << "Maximum contiguous sum (Kadane's Algorithm): " << maxSum << endl;
 
-    vector<int> num = {5, 11, 2, 7};
-    int target = 9;
+    //---------------------------------------------------------------------------------------------------------------------------
+
+    // vector<int> num = {5, 11, 2, 7};
+    // int target = 9;
+    // int n = num.size();
+    // vector<int> ans;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = i + 1; j < n; j++)
+    //     {
+    //         if (num[i] + num[j] == target)
+    //         {
+    //             ans.push_back(i);
+    //             ans.push_back(j);
+    //             break;
+    //         }
+    //     }
+    // }
+
+    //----------------------------------------------------------------------------------------------------------------------------
+
+    // Two Pointer Approach to find two numbers in a sorted array that add up to a target sum
+    vector<int> num = {5, 9, 10, 15};
+    int target = 14;
     int n = num.size();
     vector<int> ans;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i + 1; j < n; j++)
+    int left = 0, right = n - 1;
+
+    while (left < right){
+        int sum = num[left] + num[right];
+        if (sum == target)
         {
-            if (num[i] + num[j] == target)
-            {
-                ans.push_back(i);
-                ans.push_back(j);
-                break;
-            }
+            ans.push_back(left);
+            ans.push_back(right);
+            break;
+        }
+        else if (sum < target)
+        {
+            left++;
+        }
+        else
+        {
+            right--;
         }
     }
+    
     for (int i = 0; i < ans.size(); i++)
     {
         cout << ans[i] << " ";
     }
+
     return 0;
 }
