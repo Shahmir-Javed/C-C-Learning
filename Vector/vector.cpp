@@ -19,17 +19,33 @@ int main() {
 
     // 4: front
     cout << "Front element: " << v.front() << endl;
-    
+
     // 5: back
     cout << "Back element: " << v.back() << endl;
 
     // 6: at
     cout << "Element at index 2: " << v.at(2) << endl;
 
+    // 7: empty
+    if (v.empty()) {
+        cout << "Vector is empty" << endl;
+    }
+    else {
+        cout << "Vector is not empty" << endl;
+    }
 
-   
+    // 8: Vector Capacity
+    cout << "Capacity of vector: " << v.capacity() << endl;
 
 
+    // 9: Exercise: find the Unique elements in the vector and store them in another vector
+    
+    vector<int> v2= {1,2,2,3,3};
+    int n = 0;
+    for(int i=0;i<v2.size();i++){
+        n = n ^ v2[i];
+    }
+    cout << "Unique element: " << n << endl;
     return 0;
 
 }
